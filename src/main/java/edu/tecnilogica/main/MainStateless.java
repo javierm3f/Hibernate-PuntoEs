@@ -1,6 +1,5 @@
 package edu.tecnilogica.main;
 
-import java.math.BigDecimal;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.StatelessSession;
@@ -18,7 +17,7 @@ public class MainStateless {
 			Transaction tx = null;
 			try { // TRANSACCION
 				tx = sesion.beginTransaction();
-				for (int i = 0; i < 50; i++) {
+				for (int i = 0; i < 5000; i++) {
 					sesion.insert(new Registro());
 				}
 
