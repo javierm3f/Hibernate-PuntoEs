@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-    <session-factory>
-        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
-        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
-        <property name="hibernate.connection.password">password</property>
-        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
-        <property name="hibernate.connection.username">HR</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.Oracle8iDialect</property>
-        <property name="hibernate.search.autoregister_listeners">true</property>
-        <property name="hibernate.validator.apply_to_ddl">false</property>
-        <mapping class="edu.tecnilogica.entity.JobHistory"/>
-        <mapping class="edu.tecnilogica.entity.Registroseq"/>
-        <mapping class="edu.tecnilogica.entity.Regions"/>
-        <mapping class="edu.tecnilogica.entity.Jobs"/>
-        <mapping class="edu.tecnilogica.entity.Employees"/>
-        <mapping class="edu.tecnilogica.entity.EmpDetailsView"/>
-        <mapping class="edu.tecnilogica.entity.Locations"/>
-        <mapping class="edu.tecnilogica.entity.Registro"/>
-        <mapping class="edu.tecnilogica.entity.Countries"/>
-        <mapping class="edu.tecnilogica.entity.Departments"/>
-        <mapping class="edu.tecnilogica.entity.Registrotabla"/>
-    </session-factory>
+	<session-factory>
+		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.password">password</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+		<property name="hibernate.connection.username">HR</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle8iDialect</property>
+		<property name="hibernate.search.autoregister_listeners">true</property>
+		<property name="hibernate.validator.apply_to_ddl">false</property>
+		<property name="hibernate.show_sql">true</property>
+		<mapping class="edu.tecnilogica.entity.JobHistory" />
+		<mapping class="edu.tecnilogica.entity.Registroseq" />
+		<mapping class="edu.tecnilogica.entity.Regions" />
+		<mapping class="edu.tecnilogica.entity.Jobs" />
+		<mapping class="edu.tecnilogica.entity.Employees" />
+		<mapping class="edu.tecnilogica.entity.EmpDetailsView" />
+		<mapping class="edu.tecnilogica.entity.Locations" />
+		<mapping class="edu.tecnilogica.entity.Registro" />
+		<mapping class="edu.tecnilogica.entity.Countries" />
+		<mapping class="edu.tecnilogica.entity.Departments" />
+		<mapping class="edu.tecnilogica.entity.Registrotabla" />
+	</session-factory>
 </hibernate-configuration>
